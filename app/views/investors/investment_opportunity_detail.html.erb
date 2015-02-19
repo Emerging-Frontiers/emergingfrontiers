@@ -1,0 +1,419 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+      <title>Emerging Frontiers</title>
+      <link rel="stylesheet" type="text/css" href="/assets/style.css">
+      <!--jQuery-->
+      <script src="/assets/jquery.min.js"></script>
+       <script src="/assets/tab.js"></script> 
+      <!--jQuery-->
+      <!--font attched-->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+      <script type="text/javascript">
+         WebFontConfig = {
+         google: { families: [ 'Open+Sans:400,600,300:latin' ] }
+         };
+         (function() {
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+         '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'true';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+              })();
+              
+      </script>
+      <!--font attched-->
+      <!--boostrap-->
+      <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css">
+      <script src="/assets/bootstrap.min.js"></script>
+      <!--boostrap-->
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script>
+         $(function() {
+         	var pull 		= $('#pull');
+         		menu 		= $('nav ul');
+         		menuHeight	= menu.height();
+         
+         	$(pull).on('click', function(e) {
+         		e.preventDefault();
+         		menu.slideToggle();
+         	});
+         
+         	$(window).resize(function(){
+               		var w = $(window).width();
+               		if(w > 320 && menu.is(':hidden')) {
+               			menu.removeAttr('style');
+               		}
+           		});
+         });
+      </script>
+      <!----start-slider-script---->
+      <link rel="stylesheet" type="text/css" href="/assets/rslide.css">
+      <script src="/assets/responsiveslides.min.js"></script>
+      <script>
+         // You can also use "$(window).load(function() {"
+         $(function () {
+           // Slideshow 4
+           $("#slider4").responsiveSlides({
+             auto: true,
+             pager: true,
+             nav: true,
+             speed: 500,
+             namespace: "callbacks",
+             before: function () {
+               $('.events').append("<li>before event fired.</li>");
+             },
+             after: function () {
+               $('.events').append("<li>after event fired.</li>");
+             }
+           });
+         
+         });
+      </script>
+      <!----//End-slider-script---->
+      
+   </head>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header" id="top">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <%= render :partial => "/layouts/shared/investment_slider.html.erb" %>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--navbar2-->
+      <div class="navbar2">
+         <!--container-->
+         <div class="container">
+            <ul>
+               <li><a class="active" href="<%= investment_path %>#sec1">Featured Opportunities</a></li>
+               <li><a href="<%= investment_path %>#sec2">Selection Criteria</a></li>
+            </ul>
+         </div>
+         <!--container-->
+      </div>
+
+
+      <!--navbar2-->
+      <!--featured-->
+      <div class="featured detail">
+         <!--container-->
+         <div class="container">
+            <div class="base"><a href="<%= investment_path %>#sec1">Featured Opportunities</a>&nbsp;/&nbsp;<%= @investment_opportunity.company_name %></div>
+             <% flash.each do |name, msg| %>
+               <%= content_tag :div, msg, :id => "flash_#{name}" %>
+              <% end %>
+            <div class="clearfix"></div>
+            <div class="col-lg-9 col-md-9 col-sm-9 p0">
+          <div class="col-lg-2 col-md-2 col-sm-12 ">
+               <div class="clogo"><%=  image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/investment_opportunities/#{@investment_opportunity.id}/#{@investment_opportunity.logo_file_name}") %></div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 ">
+               <div class="video">
+                  <%=  image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/investment_opportunities/#{@investment_opportunity.id}/#{@investment_opportunity.banner_image_file_name}") %>
+               </div>
+               <div class="clearfix"></div>
+               <div class="title">
+                  <div class="col-lg-5 col-md-5 col-sm-5">
+                     <h4><%= @investment_opportunity.company_name %></h4>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                     <div class="sector">
+                        <p><%= @investment_opportunity.sector %></p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3">
+                     <div class="loca">
+                        <p><%= @investment_opportunity.location %></p>
+                     </div>
+                  </div>
+               </div>
+               <p><%= @investment_opportunity.company_description %></p>
+               
+               <div class="clearfix"></div>
+               
+         
+               
+             </div> 
+            <!--tabs left-->
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+               <div id="usual2" class="usuals">
+                  <ul>
+                     <li><a class="selected" href="#tab1">Summary</a></li>
+                     <li><a href="#tab2">Presentation</a></li>
+                     <li><a href="#tab3">Team</a></li>
+                     <li><a href="#tab4">News/Press</a></li>
+                     <li><a href="#tab5">Supporting Documents</a></li>
+                     <li><a href="#tab6">FAQs</a></li>
+                  </ul>
+               </div>
+               <div class="clearfix"></div>
+               <!--tab1-->
+               <div id="tab1" >
+                <%= @investment_opportunity.summary.html_safe %>
+                 <div class="clearfix">&nbsp;</div>
+               </div>  
+               <!--tab2-->
+
+                <div id="tab2" class="supp" style="display:none;">
+
+                  <ul>
+                    <% @presentations.each do |ps| %>
+                     <!--  <a href="https://docs.google.com/gview?url=http://s3-eu-west-1.amazonaws.com/emf-prod/opportunity_presentations/<%#= ps.id %>/<%#= ps.presentation_file_name%>&embedded=true">Your Pdf Viewer</a>  -->
+                     <iframe src="https://docs.google.com/gview?url=http://s3-eu-west-1.amazonaws.com/emf-prod/opportunity_presentations/<%= ps.id %>/<%= ps.presentation_file_name%>&embedded=true" style="border: 0" width="90%" height="400px;" frameborder="0" scrolling="no"></iframe>  
+                        
+                    <% end %>
+                  </ul>  
+                <% @presentation_videos.each do |pv| %>
+                  <div class="video">
+                      <%= pv.description.html_safe %> 
+                      <div style="margin-bottom:5px"> 
+                        <strong> <%= pv.title %></strong>
+                      </div>
+                  </div> 
+                <% end %>
+                    <div class="clearfix">&nbsp;</div>
+              </div>
+               <!--tab2-->
+               <!--tab3-->
+               <div id="tab3" style="display:none;">
+               <% if !@management_teams.blank? %>
+                 <div class="rowsec">
+                  <h2>Management Team</h2>
+                   <% @management_teams.each do |team| %>
+                      <div class="cell">
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                          <%= image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/teams/#{team.id}/#{team.profile_pic_file_name}",:class=>"circle") %>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                            <p><strong><%= team.user_name  %></strong> <%= team.description %></p>
+                         </div>
+                      </div>
+                    <% end %>
+                  </div> 
+                <% end %>   
+
+                <div class="clearfix"></div>
+                <% if !@advisory_teams.blank? %>
+                  <div class="rowsec">
+                  <h2>Advisory Team</h2>
+                   <% @advisory_teams.each do |team| %>
+                      <div class="cell">
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+                          <%= image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/teams/#{team.id}/#{team.profile_pic_file_name}",:class=>"circle") %>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+                            <p><strong><%= team.user_name  %></strong> <%= team.description %></p>
+                         </div>
+                      </div>
+                    <% end %> 
+                  </div>
+                <% end %>  
+                 <div class="clearfix">&nbsp;</div>
+
+               </div>
+               <!--tab3-->
+               
+               <!--tab4-->
+              <div id="tab4" style="display:none;">
+                <% @news_presses.each do |news_press| %>
+                  <div class="rowsec">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <h2><%= news_press.title %></h2>
+                      <span><%= news_press.created_at.strftime("%B %d, %Y") %></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2"><%= image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/news_presses/#{news_press.id}/#{news_press.image_file_name}",:class => "img") %></div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                     <p><%= news_press.description %></p>
+                     <a href="<%= news_press.link %>" target="new">read more</a>
+                    </div>
+                   </div>
+                     <div class="clearfix">&nbsp;</div>
+                <% end %>   
+               </div>
+               <!--tab4-->
+              
+
+               
+              
+               <!--tab5-->
+              <div id="tab5" class="supp" style="display:none;">
+              	<h2>Download Supporting Documents</h2>
+                <ul>
+                <% @documents.each do |opportunity_doc| %>
+                  <% if opportunity_doc.document_content_type == "application/pdf" %>
+                    <li class="pdf"><a href="http://s3-eu-west-1.amazonaws.com/emf-prod/opportunity_documents/<%= opportunity_doc.id %>/<%= opportunity_doc.document_file_name %>" target="new"><%= opportunity_doc.document_file_name %></a>
+                    </li>
+                  <% elsif opportunity_doc.document_content_type == 'application/msword' || opportunity_doc.document_content_type == 'applicationvnd.ms-word' || opportunity_doc.document_content_type =='applicaiton/vnd.openxmlformats-officedocument.wordprocessingm1.document' %>
+                    <li class="word"><a href="http://s3-eu-west-1.amazonaws.com/emf-prod/opportunity_documents/<%= opportunity_doc.id %>/<%= opportunity_doc.document_file_name %>" target="new"><%= opportunity_doc.document_file_name %></a>
+                    </li>
+                  <% elsif opportunity_doc.document_content_type == 'application/msexcel' || opportunity_doc.document_content_type == 'application/vnd.ms-excel' || opportunity_doc.document_content_type =='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' %>
+                    <li class="word"><a href="http://s3-eu-west-1.amazonaws.com/emf-prod/opportunity_documents/<%= opportunity_doc.id %>/<%= opportunity_doc.document_file_name %>" target="new"><%= opportunity_doc.document_file_name %></a>
+                    </li>  
+                  <% end %>  
+                <% end %>
+                </ul>
+  				      <div class="clearfix">&nbsp;</div>
+               </div>
+               <!--tab5--> 
+              <div id="tab6" class="supp" style="display:none;">
+                <% if !@investment_opportunity.faq.blank? %>
+                  <%= @investment_opportunity.faq.html_safe %>
+                <% end %>  
+                 <div class="clearfix">&nbsp;</div>
+              </div>
+            </div>
+            <!--tabs left--> 
+            </div>
+            
+            <!--right sec-->       
+            <div class="col-lg-3 col-md-3 col-sm-3 right-sec">
+               <div class="days">
+                  <h1><%= @investment_opportunity.days_left%></h1>
+                  <p>Status</p>
+               </div>
+               <div class="raise">
+                  <h1>$<%= @investment_opportunity.amount_raised %></h1>
+                  <p>Raised</p>
+               </div>
+               <div class="fund">
+                  <h1>$<%= @investment_opportunity.funding_target %></h1>
+                  <p>Funding Target</p>
+               </div>
+               <div class="days">
+                <% funding_target = @investment_opportunity.funding_target.delete('$ ,').to_f %>
+                <% raised = @investment_opportunity.amount_raised.delete('$ ,').to_f %>
+                  <h1><%= ((raised * 100) / funding_target).round   %>%</h1>
+                  <p>of Total</p>
+               </div>
+               <div class="raise">
+                  <h1>$<%= @investment_opportunity.proposed_valuation %></h1>
+                  <p>Proposed Valuation (Pre-Money)</p>
+               </div>
+               <div class="fund">
+                   <div class="sharebtn">                  
+                <a class="gray" href="#">Offering Terms</a>
+                </div></div>
+               <div class="fund">
+                   <div class="sharebtn">   
+                      <a href="#"><%= @investment_opportunity.offering_term %> </a>
+                   </div>
+               </div>
+               <div class="fund">
+               <div class="invbtn">
+                  <%= link_to "Invest",send_investment_email_path(@investment_opportunity.id) , :remote => true %>
+               </div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+            <!--right sec-->  
+            
+            <div class="clearfix"></div>
+    
+             
+            <div class="mbtm"></div>
+         </div>
+         <!--container-->
+      </div>
+      <!--featured-->
+      <%= render :partial => "/layouts/shared/subscribe.html.erb" %>
+      <!--footer-->
+     <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer
+     
+	  <script>
+         $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+         	$('html,body').animate({
+         	  scrollTop: target.offset().top
+         	}, 1000);
+         	return false;
+           }
+         }
+          });
+         });
+      </script>-->
+     <div id="investment-popup" class="landing-popup modal">
+        <div class='landing-wrapper'>
+          <div class="header">
+            <img alt="Emf logo alt" src="/assets/emf_logo_alt.png">
+          </div>
+          <p class="desc-normal notice">
+            Thank you for your interest in Emerging Frontiers!  Your investment request has been submitted and a member of our team will contact you within 24 hours.
+           <div class="subcribe-form text-center">
+              <input type="button" class="subcribe-btn"  value="Ok" id="close_popup" />
+          </div>
+         
+        </div>
+      </div>
+	  <script type="text/javascript"> 
+         $("#usual2 ul").idTabs("tabs2"); 
+      </script> 
+      
+      <!--back to top-->
+      <script>	
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }	 
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+      		<script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+            });
+          $(".subscripe-email").bind("click",function(){
+            landing_modal.show();
+            
+          });
+         
+          $("#close_popup").click(function(){
+            $("#investment-popup").modal("hide");
+          });
+        </script>
+        <style type="text/css">
+          #flash_notice {
+            color: green;
+          }
+        </style>
+      <!--back to top-->
+   </body>
+</html>

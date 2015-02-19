@@ -1,0 +1,25 @@
+<div class="topbar">
+  <div class="container">
+    <% if investor_signed_in? %>
+      <div class="login-area">
+        <a href="<%= profile_path %>">Profile</a>&nbsp;|&nbsp;
+        <%= link_to "Logout", destroy_investor_session_path, method: :delete %>
+        <!-- <a href="http://emergingfrontiers.platform.crowdvalley.com/sign-up" target="_blank">Register</a>&nbsp;|&nbsp; -->
+        <!-- <a href="http://emergingfrontiers.platform.crowdvalley.com" target="_blank">Login</a>  -->
+      </div>
+    <% else %>
+      <div class="login-area">
+        <a href="<%= new_investor_registration_path %>">Register</a>&nbsp;|&nbsp;
+        <a href="<%= new_investor_session_path %>">Login</a>
+        <!-- <a href="http://emergingfrontiers.platform.crowdvalley.com/sign-up" target="_blank">Register</a>&nbsp;|&nbsp; -->
+        <!-- <a href="http://emergingfrontiers.platform.crowdvalley.com" target="_blank">Login</a>  -->
+      </div>
+    <% end %>  
+    <div class="social"> 
+      <a class="fb" href="https://www.facebook.com/pages/Emerging-Frontiers/230902243726317?ref=hl" target="_blank">Facebook</a> 
+      <a class="tw" href="https://twitter.com/emfrontiers" target="_blank">Twitter</a> 
+      <a class="in" href="https://www.linkedin.com/company/3326472?trk=tyah&trkInfo=tarId%3A1412738709393%2Ctas%3Aemerging%20fr%2Cidx%3A2-2-3" target="_blank">LinkedIn</a> 
+      <a class="gp" href="https://www.youtube.com/channel/UCcXN7aiSU6EwRjR-7dSdm-g" target="_blank">GooglePlus</a> 
+    </div>
+  </div>
+</div>

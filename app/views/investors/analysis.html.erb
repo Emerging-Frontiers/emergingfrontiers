@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+   <%= render :partial => "/layouts/shared/head.html.erb" %>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <%= render :partial => "/layouts/shared/home_slider.html.erb" %>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--sec1-con-->
+      
+      <!--sec5-con-->
+     <div class="section2 crite contact">
+      <div style="margin-top:10px;">
+          <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <% end %>
+        </div> 
+         <!--container-->
+         <div class="container">
+            <div class="title">
+               <h1>Register</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12">
+               <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+            </div>
+            <div class="clearfix"></div>
+            <div class="content-wrapper">
+              <div style="widows: 5px;height: 5px;" class="textss"></div>
+              <div class="post-468 page type-page status-publish hentry home-content block entry-block">
+                <ul class="user_check">
+                <%= form_tag  update_analysis_path, :id=>"myregi" do %>
+                  <li class="user_li1 user_li" style="padding: 5px;">
+                    <input type="checkbox"  onclick="getnextstep('1');"  name="us_citizen"/> 
+                    <span>I am a US citizen, or US resident for tax purposes.</span>
+                    <div class="checkuser_div1 checkuser_div">
+                      <div class="us_error"></div>
+                      
+                        <ul>
+                          <li><input type="radio" name="user_name" id="us_input" value="Net Worth" /> 
+                            <div class="check_user_option">
+                              <strong>Net Worth</strong><br />
+                                <span>I have an individual net worth, or joint net worth with my spouse, that exceeds $1 million (excluding my primary residence).</span>
+                            </div>
+                           </li>
+                          <li><input type="radio" name="user_name" id="us_input1" value="Income" /> 
+                            <div class="check_user_option">
+                              <strong>Income</strong><br />
+                                <span>I have an individual income exceeding $200,000; or combined with my spouse exceeding $300,000, in each of the past 2 years and expect the same this year</span>
+                            </div>
+                          </li>
+                          <li>
+                            <input type="radio" name="user_name"id="us_input2" value="venture capital" /> 
+                            <div class="check_user_option">
+                              <strong>Venture Capital or Investment Firm</strong><br />
+                              <span>I invest on behalf of an accredited VC firm or an accredited investment company.</span>
+                            </div>
+                          </li>
+                          <li><input type="radio" name="user_name" id="us_input3" value="Business" /> 
+                            <div class="check_user_option">
+                              <strong>Business</strong><br />
+                              <span>I invest on behalf of a business with at least $5M in assets or in which all the equity owners are accredited.</span>
+                            </div>
+                          </li>
+                        </ul></br>
+                      <p>
+                        <input type="checkbox" id="us_term" name="us_provision_term"/> I understand that provision of false information will result in revocation of my Emerging Frontiers account.<br /><br />
+                        <input type="checkbox" id="us_term1" name="us_terms_of_service"/> I accept the <a href="http://portal.emergingfrontiers.com/legal.html#sec2">Terms of Service</a> as defined on the Emerging Frontiers website.
+                      </p>
+                      <p><input type="submit" value="SUBMIT" onclick="return getregstercheck();" /> </p>
+                      <hr />
+                      <!-- <p><strong>Not accredited?</strong> No problem. Please continue to follow us, read our <a href="#">blog</a>, and stay informed  on the latest news on <a href="#"> Emerging Frontiers</a>.</p> -->                                            
+                    </div>
+                  </li>
+                <% end %>
+                <%= form_tag  update_analysis_path, :id=>"myregi1",:style=>"margin-top:0px;" do %>
+                  <li class="user_li2 user_li" style="padding: 5px;"><input type="checkbox" name="uk_citizen" onclick="getnextstep('2');" /> I am a citizen or permanent resident of the United Kingdom.
+                    <div class="checkuser_div2 checkuser_div">
+                      <h4>High Net Worth Investor Statement </h4>
+                      <h4>I certify that I qualify as a high net worth investor because at least one of the following applies to me:</h4>
+                      <ul class="uk_ul_sq">
+                        <li><input type="checkbox" id="uk_term1" name="uk_annual_income" /> In the past twelve months, my annual income amounted to &euro; 100,000 or more;</li>
+                        <li><input type="checkbox" id="uk_term2" name="uk_assets_worth" /> Throughout the past twelve months, I have held net assets that are worth at least &euro;250,000.</li>
+                      </ul>
+                      <h4>Net assets for these purposes do not include:</h4>
+                      <ul class="uk_ul_sq">
+                        <li>(a) the property which is my primary residence or any money raised through a loan secured on that property;</li>
+                        <li>(b) any rights of mine under a qualifying contract of insurance; or</li>
+                        <li>(c) any benefits (in the form of pensions or otherwise) which are payable on the termination of my service or on my death or retirement and to which I am (or my dependants are), or may be, entitled.</li>
+                      </ul>
+                      <ul class="uk_ul_sq1">
+                        <li>
+                          <input type="checkbox" id="uk_term" name="uk_term1" /><div class="check_user_option">I accept that the investments to which the promotions will relate may expose me to a significant risk of losing all of the money or other property invested. I am aware that it is open to me to seek advice from an authorised person who specialises in advising on non-mainstream pooled investments.</div>
+                        </li>
+                        <li>
+                          <input  type="checkbox" id="uk_opyion1" name="uk_term2"  />
+                          <div class="check_user_option">
+                            I certify that I am a sophisticated investor, as defined by the Financial Conduct Authority in the definition above.
+                          </div>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="uk_opyion2" name="uk_term3"/>
+                          <div class="check_user_option">I am not a sophisticated investor as defined by the FCA.</div>
+                        </li>
+                      </ul><br/>
+                      <p><input type="submit" value="SUBMIT" onclick="return getuk_form();" /> &nbsp;&nbsp;<span class="uk_error"></span></p>
+                      </div>
+                  </li>
+                <% end %>  
+                <li class="user_li3 user_li" style="padding: 5px;">
+                  <%= form_tag  update_analysis_path, :id=>"myregi2",:style=>"margin-top:0px;" do %>
+                    <input type="checkbox"  id="not_uk_us_citizen" name="not_uk_us_citizen" onchange="valueChanged()"/> I am neither a citizen nor a permanent resident of the US or UK.
+                    <span id="not_us_uk_btn" style="display:none;"><input type="submit" value="SUBMIT"  /></span>
+                  <% end %>  
+                </li>
+
+              </ul>
+            </div>
+            </div>    
+            <div class="clearfix"></div>
+            <div class="mbtm"></div>
+         </div>
+         <!--container-->
+      </div>
+      <!--sec5-con-->
+      <div class="clearfix"></div>
+
+      <div id="landing-popup" class="landing-popup modal">
+        <div class='landing-wrapper'>
+          <div class="header">
+            <img alt="Emf logo alt" src="/assets/emf_logo_alt.png">
+          </div>
+          <p class="desc-normal notice">
+            Unfortunately you do not currently satisfy the financial requirements to participate in private investments on the Emerging Frontiers network.  Please stay on our general mailing list so that we can keep you informed on any changes in regulatory requirements.  Thank you for your interest in Emerging Frontiers.
+          </p>
+           <div class="subcribe-form text-center">
+            <%= form_tag mailchimp_registration_path , :remote => true do %>
+              <input type="button" class="subcribe-btn"  value="Ok" id="close_popup" />
+            <% end %>
+          </div>
+         
+        </div>
+      </div>
+      
+
+      <!--footer-->
+      <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer-->
+            <!--back to top-->
+      <script>  
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }   
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+          <script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+                
+                //Sign up button
+                // $("#join-evo-submit-btn").bind("click",function(){
+                //   landing_modal.show();
+                //   // window.open()
+                // })
+            });
+        </script>
+      <!--back to top-->
+      <!-- custome javascript -->
+      <script type="text/javascript">
+        homepage.init();
+      </script>
+      <script type="text/javascript">
+function getnextstep(x)
+{
+//    alert("sdfsdf");
+  jQuery(".checkuser_div"+x).slideToggle();
+  
+jQuery(".user_li").toggle();
+jQuery(".user_li"+x).toggle();
+}
+function getregstercheck()
+{ jQuery(".us_error").hide();
+    if(jQuery('#us_input').is(':checked') || jQuery('#us_input1').is(':checked') || jQuery('#us_input2').is(':checked') || jQuery('#us_input3').is(':checked'))
+    {
+        if(jQuery("#us_term").prop("checked") == false && jQuery("#us_term1").prop("checked") == false ){
+            
+           
+            jQuery("#us_term1").css("border","1px solid red")
+            jQuery(".us_error").html("Please Accept Both  Terms of Service..");
+            jQuery(".us_error").slideToggle();
+            return false;
+            
+       
+            
+          }
+   
+   }else
+    {
+            jQuery(".us_error").html("Please Select Any Option");
+            jQuery(".us_error").slideToggle();
+            return false;
+
+                }
+    
+}
+function getuk_form()
+{
+    jQuery(".uk_error").hide();
+    if(jQuery("#uk_term").prop("checked") == false|| jQuery("#uk_opyion1").prop("checked") == false || jQuery("#uk_opyion2").prop("checked") == false || jQuery("#uk_term1").prop("checked") == false || jQuery("#uk_term2").prop("checked") == false)
+    {
+      jQuery(".uk_error").html("Please Select Term");
+      jQuery(".uk_error").slideToggle();
+      return false;
+    }
+        
+}
+ function valueChanged()
+{
+    if($('#not_uk_us_citizen').is(":checked"))   
+        $("#not_us_uk_btn").show();
+    else
+        $("#not_us_uk_btn").hide();
+}
+
+$(document).ready(function() {
+    $('#uk_opyion2').click(function() {
+        if ($(this).is(':checked')) {
+            $("#landing-popup").modal("show");
+        }
+    });
+    $("#close_popup").click(function(){
+       $("#landing-popup").modal("hide");
+    });
+});
+</script> 
+
+<style>
+.user_check,.user_check ul{list-style-type: none;}
+.checkuser_div{display: none;}
+.textss{content: "\f096";}
+.check_user_option {
+  float: right;
+  width: 96%;
+}
+.checkuser_div2.checkuser_div .uk_ul_sq > li {
+  padding: 0;
+  padding-top: 10px !important;
+}
+.checkuser_div2.checkuser_div li {
+  clear: both;
+  padding: 10px 0;
+}
+.checkuser_div1.checkuser_div li  {
+  clear: both;
+  padding: 15px 1px;
+}
+.uk_error{color:#B70000 ;font-size: 15px;}
+.us_error{ background: #FFC6C6;color: #B70000;font-size: 15px;padding: 5px 15px;display: none;}
+</style>
+
+
+
+<!--google analytics-->
+ <%= render :partial => "layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>
+
+
+
+
+  

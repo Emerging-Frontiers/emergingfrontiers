@@ -1,0 +1,300 @@
+I, [2014-12-15T10:35:17.643334 #4950]  INFO -- : Started GET "/about" for 127.0.0.1 at 2014-12-15 10:35:17 +0530
+I, [2014-12-15T10:35:20.253381 #4950]  INFO -- : Processing by HomeController#about as HTML
+I, [2014-12-15T10:35:20.909511 #4950]  INFO -- : >>>>>>>#<StaticPage id: 1, title: "About", description: "<div class=\"section1 crite over\" id=\"sec1\"><!--con...", created_at: "2014-12-11 09:21:02", updated_at: "2014-12-15 04:41:57">
+I, [2014-12-15T10:35:20.920222 #4950]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.8ms)
+I, [2014-12-15T10:35:20.921654 #4950]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.8ms)
+I, [2014-12-15T10:35:20.921777 #4950]  INFO -- :   Rendered home/about.html.erb within layouts/application (6.5ms)
+I, [2014-12-15T10:35:20.922835 #4950]  INFO -- : Completed 200 OK in 669ms (Views: 12.8ms | ActiveRecord: 628.0ms)
+I, [2014-12-15T10:35:20.978080 #4950]  INFO -- : Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-12-15 10:35:20 +0530
+I, [2014-12-15T10:35:22.465093 #4950]  INFO -- : Started GET "/assets/custom.css" for 127.0.0.1 at 2014-12-15 10:35:22 +0530
+I, [2014-12-15T10:35:22.668351 #4950]  INFO -- : Started GET "/assets/style.css" for 127.0.0.1 at 2014-12-15 10:35:22 +0530
+I, [2014-12-15T10:35:22.948431 #4950]  INFO -- : Started GET "/assets/custom.js" for 127.0.0.1 at 2014-12-15 10:35:22 +0530
+I, [2014-12-15T10:35:23.229766 #4950]  INFO -- : Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-12-15 10:35:23 +0530
+I, [2014-12-15T10:35:24.463524 #4950]  INFO -- : Started GET "/assets/rslide.css" for 127.0.0.1 at 2014-12-15 10:35:24 +0530
+I, [2014-12-15T10:35:24.712156 #4950]  INFO -- : Started GET "/assets/flexslider.css" for 127.0.0.1 at 2014-12-15 10:35:24 +0530
+I, [2014-12-15T10:35:24.992350 #4950]  INFO -- : Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-12-15 10:35:24 +0530
+I, [2014-12-15T10:35:25.576012 #4950]  INFO -- : Started GET "/assets/responsiveslides.min.js" for 127.0.0.1 at 2014-12-15 10:35:25 +0530
+I, [2014-12-15T10:35:25.890542 #4950]  INFO -- : Started GET "/assets/jquery.flexslider.js" for 127.0.0.1 at 2014-12-15 10:35:25 +0530
+I, [2014-12-15T10:35:26.463383 #4950]  INFO -- : Started GET "/assets/logo.png" for 127.0.0.1 at 2014-12-15 10:35:26 +0530
+I, [2014-12-15T10:35:26.672436 #4950]  INFO -- : Started GET "/assets/about1.jpg" for 127.0.0.1 at 2014-12-15 10:35:26 +0530
+I, [2014-12-15T10:35:26.880606 #4950]  INFO -- : Started GET "/assets/about2.jpg" for 127.0.0.1 at 2014-12-15 10:35:26 +0530
+I, [2014-12-15T10:35:27.059905 #4950]  INFO -- : Started GET "/assets/about3.jpg" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:27.210637 #4950]  INFO -- : Started GET "/assets/a1.jpg" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:27.407415 #4950]  INFO -- : Started GET "/assets/line.jpg" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:27.557402 #4950]  INFO -- : Started GET "/assets/a2.jpg" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:27.726705 #4950]  INFO -- : Started GET "/assets/a3.jpg" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:27.882268 #4950]  INFO -- : Started GET "/assets/kv.png" for 127.0.0.1 at 2014-12-15 10:35:27 +0530
+I, [2014-12-15T10:35:28.033512 #4950]  INFO -- : Started GET "/assets/mm.png" for 127.0.0.1 at 2014-12-15 10:35:28 +0530
+I, [2014-12-15T10:35:28.193154 #4950]  INFO -- : Started GET "/assets//bb.png" for 127.0.0.1 at 2014-12-15 10:35:28 +0530
+I, [2014-12-15T10:35:28.481923 #4950]  INFO -- : Started GET "/assets/dw.png" for 127.0.0.1 at 2014-12-15 10:35:28 +0530
+I, [2014-12-15T10:35:28.717630 #4950]  INFO -- : Started GET "/assets/emf_logo_alt.png" for 127.0.0.1 at 2014-12-15 10:35:28 +0530
+I, [2014-12-15T10:35:28.945278 #4950]  INFO -- : Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-12-15 10:35:28 +0530
+I, [2014-12-15T10:35:29.232587 #4950]  INFO -- : Started GET "/assets/social.png" for 127.0.0.1 at 2014-12-15 10:35:29 +0530
+I, [2014-12-15T10:35:29.464548 #4950]  INFO -- : Started GET "/assets/themes.png" for 127.0.0.1 at 2014-12-15 10:35:29 +0530
+I, [2014-12-15T10:37:19.505247 #4950]  INFO -- : Started GET "/approach" for 127.0.0.1 at 2014-12-15 10:37:19 +0530
+I, [2014-12-15T10:37:19.653271 #4950]  INFO -- : Processing by HomeController#approach as HTML
+I, [2014-12-15T10:37:19.657296 #4950]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.4ms)
+I, [2014-12-15T10:37:19.658052 #4950]  INFO -- :   Rendered home/approach.html.erb within layouts/application (3.5ms)
+I, [2014-12-15T10:37:19.658150 #4950]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2014-12-15T10:37:19.659553 #4950] FATAL -- : 
+ActionView::Template::Error (undefined method `description' for nil:NilClass):
+    188:       <!--navbar2-->
+    189:       <div class="clearfix"></div>
+    190:       <!--section1-->
+    191:       <%= @approach.description.html_safe %>
+    192:       <!--section6-->
+    193:       <div class="clearfix"></div>
+    194:       
+  app/views/home/approach.html.erb:191:in `_app_views_home_approach_html_erb__608961813_88712570'
+
+
+I, [2014-12-15T10:37:19.674645 #4950]  INFO -- : Started GET "/approach" for 127.0.0.1 at 2014-12-15 10:37:19 +0530
+I, [2014-12-15T10:37:19.823517 #4950]  INFO -- : Processing by HomeController#approach as HTML
+I, [2014-12-15T10:37:19.826244 #4950]  INFO -- :   Rendered layouts/shared/_header.html.erb (0.8ms)
+I, [2014-12-15T10:37:19.826932 #4950]  INFO -- :   Rendered home/approach.html.erb within layouts/application (2.4ms)
+I, [2014-12-15T10:37:19.827024 #4950]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2014-12-15T10:37:19.828365 #4950] FATAL -- : 
+ActionView::Template::Error (undefined method `description' for nil:NilClass):
+    188:       <!--navbar2-->
+    189:       <div class="clearfix"></div>
+    190:       <!--section1-->
+    191:       <%= @approach.description.html_safe %>
+    192:       <!--section6-->
+    193:       <div class="clearfix"></div>
+    194:       
+  app/views/home/approach.html.erb:191:in `_app_views_home_approach_html_erb__608961813_87023460'
+
+
+I, [2014-12-15T10:37:27.381006 #5036]  INFO -- : Started GET "/approach" for 127.0.0.1 at 2014-12-15 10:37:27 +0530
+I, [2014-12-15T10:37:32.059778 #5036]  INFO -- : Processing by HomeController#approach as HTML
+I, [2014-12-15T10:37:33.315939 #5036]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.4ms)
+I, [2014-12-15T10:37:33.317268 #5036]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.7ms)
+I, [2014-12-15T10:37:33.317362 #5036]  INFO -- :   Rendered home/approach.html.erb within layouts/application (4.3ms)
+I, [2014-12-15T10:37:33.318237 #5036]  INFO -- : Completed 200 OK in 1258ms (Views: 10.4ms | ActiveRecord: 1218.4ms)
+I, [2014-12-15T10:37:33.343517 #5036]  INFO -- : Started GET "/assets/accordion.css" for 127.0.0.1 at 2014-12-15 10:37:33 +0530
+I, [2014-12-15T10:37:33.513072 #5036]  INFO -- : Started GET "/assets/style.css" for 127.0.0.1 at 2014-12-15 10:37:33 +0530
+I, [2014-12-15T10:37:34.019894 #5036]  INFO -- : Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.167103 #5036]  INFO -- : Started GET "/assets/custom.css" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.315323 #5036]  INFO -- : Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.464426 #5036]  INFO -- : Started GET "/assets/rslide.css" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.612719 #5036]  INFO -- : Started GET "/assets/custom.js" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.761154 #5036]  INFO -- : Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:34.906593 #5036]  INFO -- : Started GET "/assets/responsiveslides.min.js" for 127.0.0.1 at 2014-12-15 10:37:34 +0530
+I, [2014-12-15T10:37:35.408404 #5036]  INFO -- : Started GET "/assets/logo.png" for 127.0.0.1 at 2014-12-15 10:37:35 +0530
+I, [2014-12-15T10:37:35.553996 #5036]  INFO -- : Started GET "/assets/invest1.jpg" for 127.0.0.1 at 2014-12-15 10:37:35 +0530
+I, [2014-12-15T10:37:35.722925 #5036]  INFO -- : Started GET "/assets/invest2.jpg" for 127.0.0.1 at 2014-12-15 10:37:35 +0530
+I, [2014-12-15T10:37:35.874876 #5036]  INFO -- : Started GET "/assets/invest3.jpg" for 127.0.0.1 at 2014-12-15 10:37:35 +0530
+I, [2014-12-15T10:37:36.051794 #5036]  INFO -- : Started GET "/assets/our1.jpg" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.202491 #5036]  INFO -- : Started GET "/assets/rslide.css" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.346023 #5036]  INFO -- : Started GET "/assets/our2.jpg" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.499272 #5036]  INFO -- : Started GET "/assets/our3.jpg" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.650103 #5036]  INFO -- : Started GET "/assets/emf_logo_alt.png" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.795272 #5036]  INFO -- : Started GET "/assets/logo.png" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:36.938008 #5036]  INFO -- : Started GET "/assets/line.jpg" for 127.0.0.1 at 2014-12-15 10:37:36 +0530
+I, [2014-12-15T10:37:37.089245 #5036]  INFO -- : Started GET "/assets/uparrow.png" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-15T10:37:37.261703 #5036]  INFO -- : Started GET "/assets/social.png" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-15T10:37:37.402320 #5036]  INFO -- : Started GET "/assets/themes.png" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-15T10:37:37.546949 #5036]  INFO -- : Started GET "/assets/downarrow.png" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-15T10:37:37.713285 #5036]  INFO -- : Started GET "/assets/myanmar.jpg" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-15T10:37:37.872254 #5036]  INFO -- : Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-12-15 10:37:37 +0530
+I, [2014-12-18T19:02:07.628795 #12835]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-12-18 19:02:07 +0530
+I, [2014-12-18T19:02:10.111608 #12835]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-12-18T19:02:10.696083 #12835]  INFO -- :   Rendered layouts/shared/_head.html.erb (0.3ms)
+I, [2014-12-18T19:02:11.280681 #12835]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (584.1ms)
+I, [2014-12-18T19:02:11.282660 #12835]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.4ms)
+I, [2014-12-18T19:02:11.283358 #12835]  INFO -- :   Rendered layouts/shared/_home_slider.html.erb (0.2ms)
+I, [2014-12-18T19:02:11.284793 #12835]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.5ms)
+I, [2014-12-18T19:02:11.285974 #12835]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.7ms)
+I, [2014-12-18T19:02:11.286622 #12835]  INFO -- :   Rendered layouts/shared/_google_analytics.html.erb (0.2ms)
+I, [2014-12-18T19:02:11.286729 #12835]  INFO -- :   Rendered home/index.html.erb within layouts/application (592.5ms)
+I, [2014-12-18T19:02:11.287603 #12835]  INFO -- : Completed 200 OK in 1176ms (Views: 37.5ms | ActiveRecord: 1121.6ms)
+I, [2014-12-18T19:02:11.459775 #12835]  INFO -- : Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2014-12-18 19:02:11 +0530
+I, [2014-12-18T19:02:11.631209 #12835]  INFO -- : Started GET "/assets/style.css" for 127.0.0.1 at 2014-12-18 19:02:11 +0530
+I, [2014-12-18T19:02:11.785876 #12835]  INFO -- : Started GET "/assets/jquery.validate.min.js" for 127.0.0.1 at 2014-12-18 19:02:11 +0530
+I, [2014-12-18T19:02:12.397253 #12835]  INFO -- : Started GET "/assets/custom.css" for 127.0.0.1 at 2014-12-18 19:02:12 +0530
+I, [2014-12-18T19:02:12.554472 #12835]  INFO -- : Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2014-12-18 19:02:12 +0530
+I, [2014-12-18T19:02:12.744295 #12835]  INFO -- : Started GET "/assets/rslide.css" for 127.0.0.1 at 2014-12-18 19:02:12 +0530
+I, [2014-12-18T19:02:12.982215 #12835]  INFO -- : Started GET "/assets/custom.js" for 127.0.0.1 at 2014-12-18 19:02:12 +0530
+I, [2014-12-18T19:02:13.244959 #12835]  INFO -- : Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2014-12-18 19:02:13 +0530
+I, [2014-12-18T19:02:13.385993 #12835]  INFO -- : Started GET "/assets/responsiveslides.min.js" for 127.0.0.1 at 2014-12-18 19:02:13 +0530
+I, [2014-12-18T19:02:13.539173 #12835]  INFO -- : Started GET "/assets/logo.png" for 127.0.0.1 at 2014-12-18 19:02:13 +0530
+I, [2014-12-18T19:02:13.694605 #12835]  INFO -- : Started GET "/assets/slide1.jpg" for 127.0.0.1 at 2014-12-18 19:02:13 +0530
+I, [2014-12-18T19:02:13.842617 #12835]  INFO -- : Started GET "/assets/slide2.jpg" for 127.0.0.1 at 2014-12-18 19:02:13 +0530
+I, [2014-12-18T19:02:14.032518 #12835]  INFO -- : Started GET "/assets/slide3.jpg" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.212878 #12835]  INFO -- : Started GET "/assets/emftv.png" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.357452 #12835]  INFO -- : Started GET "/assets/Endaga_image.jpg" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.498240 #12835]  INFO -- : Started GET "/assets/icon2.png" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.639468 #12835]  INFO -- : Started GET "/assets/icon1.png" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.777788 #12835]  INFO -- : Started GET "/assets/social.png" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:14.939401 #12835]  INFO -- : Started GET "/assets/icon3.png" for 127.0.0.1 at 2014-12-18 19:02:14 +0530
+I, [2014-12-18T19:02:15.084627 #12835]  INFO -- : Started GET "/assets/expe.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.247424 #12835]  INFO -- : Started GET "/assets/themes.png" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.390888 #12835]  INFO -- : Started GET "/assets/innovation1.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.537696 #12835]  INFO -- : Started GET "/assets/networking.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.688918 #12835]  INFO -- : Started GET "/assets/our1.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.833387 #12835]  INFO -- : Started GET "/assets/our2.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:15.978275 #12835]  INFO -- : Started GET "/assets/our3.jpg" for 127.0.0.1 at 2014-12-18 19:02:15 +0530
+I, [2014-12-18T19:02:16.128244 #12835]  INFO -- : Started GET "/assets/path.jpg" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:16.276158 #12835]  INFO -- : Started GET "/assets/seraph.jpg" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:16.423845 #12835]  INFO -- : Started GET "/assets/leo.jpg" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:16.564205 #12835]  INFO -- : Started GET "/assets/emf_logo_alt.png" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:16.708648 #12835]  INFO -- : Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:16.871905 #12835]  INFO -- : Started GET "/investment" for 127.0.0.1 at 2014-12-18 19:02:16 +0530
+I, [2014-12-18T19:02:17.010227 #12835]  INFO -- : Processing by HomeController#investment as HTML
+I, [2014-12-18T19:02:17.158799 #12835]  INFO -- :   Rendered home/investment.html.erb within layouts/application (2.2ms)
+I, [2014-12-18T19:02:17.159140 #12835]  INFO -- : Completed 500 Internal Server Error in 149ms
+F, [2014-12-18T19:02:17.161583 #12835] FATAL -- : 
+SyntaxError (/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;             end   
+                         ^
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+  app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'
+
+
+I, [2014-12-18T19:02:17.180135 #12835]  INFO -- : Started GET "/investment" for 127.0.0.1 at 2014-12-18 19:02:17 +0530
+I, [2014-12-18T19:02:17.318753 #12835]  INFO -- : Processing by HomeController#investment as HTML
+I, [2014-12-18T19:02:17.469032 #12835]  INFO -- :   Rendered home/investment.html.erb within layouts/application (3.6ms)
+I, [2014-12-18T19:02:17.469441 #12835]  INFO -- : Completed 500 Internal Server Error in 150ms
+F, [2014-12-18T19:02:17.492480 #12835] FATAL -- : 
+SyntaxError (/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;             end   
+                         ^
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+  app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'
+
+
+I, [2014-12-18T19:02:33.493295 #12835]  INFO -- : Started GET "/investment" for 127.0.0.1 at 2014-12-18 19:02:33 +0530
+I, [2014-12-18T19:02:33.634036 #12835]  INFO -- : Processing by HomeController#investment as HTML
+I, [2014-12-18T19:02:33.783174 #12835]  INFO -- :   Rendered home/investment.html.erb within layouts/application (3.7ms)
+I, [2014-12-18T19:02:33.783518 #12835]  INFO -- : Completed 500 Internal Server Error in 149ms
+F, [2014-12-18T19:02:33.788608 #12835] FATAL -- : 
+SyntaxError (/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;             end   
+                         ^
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+  app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'
+
+
+I, [2014-12-18T19:02:44.555229 #12899]  INFO -- : Started GET "/investment" for 127.0.0.1 at 2014-12-18 19:02:44 +0530
+I, [2014-12-18T19:02:47.009380 #12899]  INFO -- : Processing by HomeController#investment as HTML
+I, [2014-12-18T19:02:47.607945 #12899]  INFO -- :   Rendered home/investment.html.erb within layouts/application (1.1ms)
+I, [2014-12-18T19:02:47.608087 #12899]  INFO -- : Completed 500 Internal Server Error in 599ms
+F, [2014-12-18T19:02:47.609471 #12899] FATAL -- : 
+SyntaxError (/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;             end   
+                         ^
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ror/sites/portal-emerging-frontiers/app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/home/investment.html.erb:129: syntax error, unexpected keyword_end, expecting ')'
+  app/views/home/investment.html.erb:248: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/home/investment.html.erb:250: syntax error, unexpected keyword_end, expecting ')'
+
+
+I, [2014-12-18T19:03:11.541144 #12925]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-12-18 19:03:11 +0530
+I, [2014-12-18T19:03:14.020617 #12925]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-12-18T19:03:14.621763 #12925]  INFO -- :   Rendered layouts/shared/_head.html.erb (0.6ms)
+I, [2014-12-18T19:03:15.261704 #12925]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (639.1ms)
+I, [2014-12-18T19:03:15.263839 #12925]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.5ms)
+I, [2014-12-18T19:03:15.264660 #12925]  INFO -- :   Rendered layouts/shared/_home_slider.html.erb (0.2ms)
+I, [2014-12-18T19:03:15.266235 #12925]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.5ms)
+I, [2014-12-18T19:03:15.267486 #12925]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.7ms)
+I, [2014-12-18T19:03:15.268218 #12925]  INFO -- :   Rendered layouts/shared/_google_analytics.html.erb (0.2ms)
+I, [2014-12-18T19:03:15.268307 #12925]  INFO -- :   Rendered home/index.html.erb within layouts/application (650.7ms)
+I, [2014-12-18T19:03:15.269196 #12925]  INFO -- : Completed 200 OK in 1248ms (Views: 48.8ms | ActiveRecord: 1177.5ms)
+I, [2014-12-18T19:03:15.626201 #12925]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-12-18 19:03:15 +0530
+I, [2014-12-18T19:03:15.767978 #12925]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-12-18T19:03:15.918217 #12925]  INFO -- :   Rendered layouts/shared/_head.html.erb (0.1ms)
+I, [2014-12-18T19:03:16.062916 #12925]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (144.1ms)
+I, [2014-12-18T19:03:16.066709 #12925]  INFO -- :   Rendered layouts/shared/_header.html.erb (3.2ms)
+I, [2014-12-18T19:03:16.067310 #12925]  INFO -- :   Rendered layouts/shared/_home_slider.html.erb (0.1ms)
+I, [2014-12-18T19:03:16.069339 #12925]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.2ms)
+I, [2014-12-18T19:03:16.069778 #12925]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.3ms)
+I, [2014-12-18T19:03:16.069926 #12925]  INFO -- :   Rendered layouts/shared/_google_analytics.html.erb (0.0ms)
+I, [2014-12-18T19:03:16.070004 #12925]  INFO -- :   Rendered home/index.html.erb within layouts/application (152.4ms)
+I, [2014-12-18T19:03:16.071635 #12925]  INFO -- : Completed 200 OK in 303ms (Views: 14.2ms | ActiveRecord: 285.9ms)
+I, [2014-12-18T19:03:20.933438 #12925]  INFO -- : Started GET "/about" for 127.0.0.1 at 2014-12-18 19:03:20 +0530
+I, [2014-12-18T19:03:21.080169 #12925]  INFO -- : Processing by HomeController#about as HTML
+I, [2014-12-18T19:03:21.382669 #12925]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (144.4ms)
+I, [2014-12-18T19:03:21.386289 #12925]  INFO -- :   Rendered layouts/shared/_header.html.erb (3.0ms)
+I, [2014-12-18T19:03:21.386844 #12925]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.1ms)
+I, [2014-12-18T19:03:21.387239 #12925]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.3ms)
+I, [2014-12-18T19:03:21.387386 #12925]  INFO -- :   Rendered layouts/shared/_google_analytics.html.erb (0.0ms)
+I, [2014-12-18T19:03:21.387464 #12925]  INFO -- :   Rendered home/about.html.erb within layouts/application (153.2ms)
+I, [2014-12-18T19:03:21.387894 #12925]  INFO -- : Completed 200 OK in 308ms (Views: 15.1ms | ActiveRecord: 291.2ms)
+I, [2014-12-18T19:03:21.420881 #12925]  INFO -- : Started GET "/assets/about2.jpg" for 127.0.0.1 at 2014-12-18 19:03:21 +0530
+I, [2014-12-18T19:03:21.605403 #12925]  INFO -- : Started GET "/assets/about1.jpg" for 127.0.0.1 at 2014-12-18 19:03:21 +0530
+I, [2014-12-18T19:03:21.804461 #12925]  INFO -- : Started GET "/assets/a2.jpg" for 127.0.0.1 at 2014-12-18 19:03:21 +0530
+I, [2014-12-18T19:03:21.992485 #12925]  INFO -- : Started GET "/assets/about3.jpg" for 127.0.0.1 at 2014-12-18 19:03:21 +0530
+I, [2014-12-18T19:03:22.148070 #12925]  INFO -- : Started GET "/assets/a1.jpg" for 127.0.0.1 at 2014-12-18 19:03:22 +0530
+I, [2014-12-18T19:03:22.348186 #12925]  INFO -- : Started GET "/assets/a3.jpg" for 127.0.0.1 at 2014-12-18 19:03:22 +0530
+I, [2014-12-18T19:03:22.542074 #12925]  INFO -- : Started GET "/assets/flexslider.css" for 127.0.0.1 at 2014-12-18 19:03:22 +0530
+I, [2014-12-18T19:03:22.712358 #12925]  INFO -- : Started GET "/assets/jquery.flexslider.js" for 127.0.0.1 at 2014-12-18 19:03:22 +0530
+I, [2014-12-18T19:03:22.855818 #12925]  INFO -- : Started GET "/assets/line.jpg" for 127.0.0.1 at 2014-12-18 19:03:22 +0530
+I, [2014-12-18T19:03:23.026651 #12925]  INFO -- : Started GET "/assets/kv.png" for 127.0.0.1 at 2014-12-18 19:03:23 +0530
+I, [2014-12-18T19:03:23.199485 #12925]  INFO -- : Started GET "/assets/mm.png" for 127.0.0.1 at 2014-12-18 19:03:23 +0530
+I, [2014-12-18T19:03:23.381041 #12925]  INFO -- : Started GET "/assets//bb.png" for 127.0.0.1 at 2014-12-18 19:03:23 +0530
+I, [2014-12-18T19:03:23.607916 #12925]  INFO -- : Started GET "/assets/dw.png" for 127.0.0.1 at 2014-12-18 19:03:23 +0530
+I, [2015-01-07T14:04:54.839406 #10589]  INFO -- : Started GET "/investment" for 127.0.0.1 at 2015-01-07 14:04:54 +0530
+I, [2015-01-07T14:04:57.928003 #10589]  INFO -- : Processing by HomeController#investment as HTML
+D, [2015-01-07T14:04:58.407641 #10589] DEBUG -- :   [1m[36mStaticPage Load (155.4ms)[0m  [1mSELECT  "static_pages".* FROM "static_pages"  WHERE (title = ('Selection Criteria'))  ORDER BY "static_pages"."id" ASC LIMIT 1[0m
+I, [2015-01-07T14:04:58.576509 #10589]  INFO -- :   Rendered layouts/shared/_head.html.erb (0.3ms)
+D, [2015-01-07T14:04:59.402366 #10589] DEBUG -- :   [1m[35mInvestor Load (150.3ms)[0m  SELECT  "investors".* FROM "investors"  WHERE "investors"."id" = 57  ORDER BY "investors"."id" ASC LIMIT 1
+I, [2015-01-07T14:04:59.589124 #10589]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (1012.0ms)
+I, [2015-01-07T14:04:59.590993 #10589]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.3ms)
+I, [2015-01-07T14:04:59.591775 #10589]  INFO -- :   Rendered layouts/shared/_investment_slider.html.erb (0.2ms)
+D, [2015-01-07T14:05:00.205097 #10589] DEBUG -- :   [1m[36mInvestmentOpportunity Load (611.6ms)[0m  [1mSELECT "investment_opportunities".* FROM "investment_opportunities"   ORDER BY created_at asc[0m
+I, [2015-01-07T14:05:00.688733 #10589]  INFO -- :   Rendered layouts/shared/_investment_opportunities.html.erb (1096.2ms)
+I, [2015-01-07T14:05:00.690409 #10589]  INFO -- :   Rendered layouts/shared/_footer.html.erb (0.8ms)
+I, [2015-01-07T14:05:00.691439 #10589]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.5ms)
+I, [2015-01-07T14:05:00.692143 #10589]  INFO -- :   Rendered layouts/shared/_google_analytics.html.erb (0.2ms)
+I, [2015-01-07T14:05:00.692227 #10589]  INFO -- :   Rendered home/investment.html.erb within layouts/application (2117.2ms)
+I, [2015-01-07T14:05:00.693011 #10589]  INFO -- : Completed 200 OK in 2765ms (Views: 68.2ms | ActiveRecord: 2664.4ms)
+I, [2015-01-07T14:05:00.784133 #10589]  INFO -- : Started GET "/assets/custom.css" for 127.0.0.1 at 2015-01-07 14:05:00 +0530
+I, [2015-01-07T14:05:00.970852 #10589]  INFO -- : Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-01-07 14:05:00 +0530
+I, [2015-01-07T14:05:01.149247 #10589]  INFO -- : Started GET "/assets/rslide.css" for 127.0.0.1 at 2015-01-07 14:05:01 +0530
+I, [2015-01-07T14:05:01.303806 #10589]  INFO -- : Started GET "/assets/c2.jpg" for 127.0.0.1 at 2015-01-07 14:05:01 +0530
+I, [2015-01-07T14:05:01.459578 #10589]  INFO -- : Started GET "/assets/style.css" for 127.0.0.1 at 2015-01-07 14:05:01 +0530
+I, [2015-01-07T14:05:01.762287 #10589]  INFO -- : Started GET "/assets/c1.jpg" for 127.0.0.1 at 2015-01-07 14:05:01 +0530
+I, [2015-01-07T14:05:01.917700 #10589]  INFO -- : Started GET "/assets/jquery.min.js" for 127.0.0.1 at 2015-01-07 14:05:01 +0530
+I, [2015-01-07T14:05:02.079368 #10589]  INFO -- : Started GET "/assets/jquery.validate.min.js" for 127.0.0.1 at 2015-01-07 14:05:02 +0530
+I, [2015-01-07T14:05:02.231727 #10589]  INFO -- : Started GET "/assets/custom.js" for 127.0.0.1 at 2015-01-07 14:05:02 +0530
+I, [2015-01-07T14:05:02.401821 #10589]  INFO -- : Started GET "/assets/tab.js" for 127.0.0.1 at 2015-01-07 14:05:02 +0530
+I, [2015-01-07T14:05:02.873205 #10589]  INFO -- : Started GET "/assets/bootstrap.min.js" for 127.0.0.1 at 2015-01-07 14:05:02 +0530
+I, [2015-01-07T14:05:03.051082 #10589]  INFO -- : Started GET "/assets/responsiveslides.min.js" for 127.0.0.1 at 2015-01-07 14:05:03 +0530
+I, [2015-01-07T14:05:03.240930 #10589]  INFO -- : Started GET "/assets/line.jpg" for 127.0.0.1 at 2015-01-07 14:05:03 +0530
+I, [2015-01-07T14:05:03.422027 #10589]  INFO -- : Started GET "/assets/c3.jpg" for 127.0.0.1 at 2015-01-07 14:05:03 +0530
+I, [2015-01-07T14:05:03.571646 #10589]  INFO -- : Started GET "/assets/r1.png" for 127.0.0.1 at 2015-01-07 14:05:03 +0530
+I, [2015-01-07T14:05:03.728451 #10589]  INFO -- : Started GET "/investment_opportunity_detail/1" for 127.0.0.1 at 2015-01-07 14:05:03 +0530
+I, [2015-01-07T14:05:03.881667 #10589]  INFO -- : Processing by InvestorsController#investment_opportunity_detail as HTML
+I, [2015-01-07T14:05:03.881900 #10589]  INFO -- :   Parameters: {"id"=>"1"}
+D, [2015-01-07T14:05:04.491963 #10589] DEBUG -- :   [1m[35mInvestmentOpportunity Load (310.6ms)[0m  SELECT  "investment_opportunities".* FROM "investment_opportunities"  WHERE "investment_opportunities"."id" = $1 LIMIT 1  [["id", 1]]
+D, [2015-01-07T14:05:05.590318 #10589] DEBUG -- :   [1m[36mInvestor Load (235.2ms)[0m  [1mSELECT  "investors".* FROM "investors"  WHERE "investors"."id" = 57  ORDER BY "investors"."id" ASC LIMIT 1[0m
+I, [2015-01-07T14:05:05.592369 #10589]  INFO -- :   Rendered layouts/shared/_top_bar.html.erb (237.8ms)
+I, [2015-01-07T14:05:05.593653 #10589]  INFO -- :   Rendered layouts/shared/_header.html.erb (1.0ms)
+I, [2015-01-07T14:05:05.593786 #10589]  INFO -- :   Rendered layouts/shared/_investment_slider.html.erb (0.0ms)
+D, [2015-01-07T14:05:06.066413 #10589] DEBUG -- :   [1m[35mOpportunityPresentation Load (228.7ms)[0m  SELECT "opportunity_presentations".* FROM "opportunity_presentations"  WHERE "opportunity_presentations"."investment_opportunity_id" = $1  [["investment_opportunity_id", 1]]
+D, [2015-01-07T14:05:06.780416 #10589] DEBUG -- :   [1m[36mPresentationVideo Load (148.7ms)[0m  [1mSELECT "presentation_videos".* FROM "presentation_videos"  WHERE "presentation_videos"."investment_opportunity_id" = $1[0m  [["investment_opportunity_id", 1]]
+D, [2015-01-07T14:05:07.641730 #10589] DEBUG -- :   [1m[35mTeam Load (259.2ms)[0m  SELECT "teams".* FROM "teams"  WHERE "teams"."investment_opportunity_id" = $1 AND "teams"."team_type" = 'Management Team'  [["investment_opportunity_id", 1]]
+D, [2015-01-07T14:05:08.365783 #10589] DEBUG -- :   [1m[36mTeam Load (241.4ms)[0m  [1mSELECT "teams".* FROM "teams"  WHERE "teams"."investment_opportunity_id" = $1 AND "teams"."team_type" = 'Advisory Team'[0m  [["investment_opportunity_id", 1]]
+D, [2015-01-07T14:05:08.874716 #10589] DEBUG -- :   [1m[35mNewsPress Load (257.4ms)[0m  SELECT "news_presses".* FROM "news_presses"  WHERE "news_presses"."investment_opportunity_id" = $1  [["investment_opportunity_id", 1]]
+D, [2015-01-07T14:05:09.473783 #10589] DEBUG -- :   [1m[36mOpportunityDocument Load (148.3ms)[0m  [1mSELECT "opportunity_documents".* FROM "opportunity_documents"  WHERE "opportunity_documents"."investment_opportunity_id" = $1[0m  [["investment_opportunity_id", 1]]
+I, [2015-01-07T14:05:09.915411 #10589]  INFO -- :   Rendered layouts/shared/_subscribe.html.erb (0.8ms)
+I, [2015-01-07T14:05:09.917129 #10589]  INFO -- :   Rendered layouts/shared/_footer.html.erb (1.3ms)
+I, [2015-01-07T14:05:09.917441 #10589]  INFO -- :   Rendered investors/investment_opportunity_detail.html.erb within layouts/application (4565.0ms)
+I, [2015-01-07T14:05:09.919254 #10589]  INFO -- : Completed 200 OK in 6037ms (Views: 1245.1ms | ActiveRecord: 4614.4ms)
+I, [2015-01-07T14:05:09.923176 #10589]  INFO -- : Started GET "/assets/r2.png" for 127.0.0.1 at 2015-01-07 14:05:09 +0530
+I, [2015-01-07T14:05:10.168039 #10589]  INFO -- : Started GET "/assets/r3.png" for 127.0.0.1 at 2015-01-07 14:05:10 +0530
+I, [2015-01-07T14:05:10.381994 #10589]  INFO -- : Started GET "/assets/r4.png" for 127.0.0.1 at 2015-01-07 14:05:10 +0530
+I, [2015-01-07T14:05:10.570309 #10589]  INFO -- : Started GET "/assets/r5.png" for 127.0.0.1 at 2015-01-07 14:05:10 +0530
+I, [2015-01-07T14:05:10.730086 #10589]  INFO -- : Started GET "/assets/icon3.png" for 127.0.0.1 at 2015-01-07 14:05:10 +0530
+I, [2015-01-07T14:05:13.182266 #10589]  INFO -- : Started GET "/assets/pdf.png" for 127.0.0.1 at 2015-01-07 14:05:13 +0530
+I, [2015-01-07T14:05:14.250240 #10589]  INFO -- : Started GET "/assets/down_arrow.png" for 127.0.0.1 at 2015-01-07 14:05:14 +0530

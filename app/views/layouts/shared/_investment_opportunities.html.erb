@@ -1,0 +1,65 @@
+<% @investment_opportunities.each do |investment_opportunity| %>
+  <div class="col-lg-6 col-md-6 col-sm-6">
+     <!--sec-box-->
+     <div class="sec1-box">
+      <% if investor_signed_in? %>
+        <a class="img" href="<%= investment_opportunity_detail_path(investment_opportunity.id) %>" ><%=  image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/investment_opportunities/#{investment_opportunity.id}/#{investment_opportunity.banner_image_file_name}", :style=> "height:311px;") %></a>
+      <% else %>
+        <a class="img" href="<%= new_investor_registration_path %>"><%=  image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/investment_opportunities/#{investment_opportunity.id}/#{investment_opportunity.banner_image_file_name}", :style=> "height:311px;") %></a>
+      <% end %>  
+        <h3><%= investment_opportunity.company_name %></h3>
+        <p class="icon1"><%= investment_opportunity.location %></p>
+        <p class="icon2"><%= investment_opportunity.sector %></p>
+        <p class="icon3" style="min-height: 72px;"><%= truncate(investment_opportunity.company_description, :length => 285, :omission => "..." , :escape => false) %></p><br />
+        <% if investor_signed_in? %>
+          <p><a href="<%= investment_opportunity_detail_path(investment_opportunity.id) %>">read more</a></p>
+        <% else %>
+          <p><a href="<%= new_investor_registration_path %>">read more</a></p>
+        <% end %>  
+        <div class="clearfix"></div>
+        <div class="divider"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4 fbox">
+          <% funding_target = investment_opportunity.funding_target.delete('$ ,').to_f %>
+          <% raised = investment_opportunity.amount_raised.delete('$ ,').to_f %>
+          <span><%= ((raised * 100) / funding_target).round   %>%</span>
+           <h4>FUNDED</h4>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 fbox">
+           <span>$<%= investment_opportunity.amount_raised%></span>
+           <h4>RAISED</h4>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4 fbox b0">
+          <span><%= investment_opportunity.days_left %></span>
+           <h4>STATUS</h4>
+        </div>
+        <div class="clearfix"></div>
+     </div>
+     <!--sec-box-->
+  </div>
+<% end %>  
+
+              <!-- <div class="col-lg-4 col-md-4 col-sm-4">
+               <div class="sec1-box">
+                  <a class="img" href="http://emergingfrontiers.platform.crowdvalley.com/r83/121662/overview" target="_blank"><img src="/assets/MWC_image.png" width="360" height="202" /></a>
+                  <h3>TBD</h3>
+                  <p class="icon1">Bangkok, Thailand</p>
+                  <p class="icon2">E-Commerce, Online Marketing</p>
+                  <p class="icon3 height-127">Company offers a ‘white-labeled’ B2B reward program to corporate clients via its custom-built mobile app and software.  </p>
+                  <a href="http://emergingfrontiers.platform.crowdvalley.com/r83/121662/overview" target="_blank">read more</a>
+                  <div class="clearfix"></div>
+                  <div class="divider"></div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 fbox">
+                     <span>0%</span>
+                     <h4>FUNDED</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 fbox">
+                     <span>$0</span>
+                     <h4>RAISED</h4>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 fbox b0">
+                     <span>30</span>
+                     <h4>DAYS LEFT</h4>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+            </div> -->

@@ -1,0 +1,34 @@
+<div id="landing-popup" class="landing-popup modal">
+        <div class='landing-wrapper'>
+          <div class="header">
+            <img alt="Emf logo alt" src="/assets/emf_logo_alt.png">
+          </div>
+
+          <!-- <p class="desc-normal">
+            Emerging Frontiers will level the playing field for companies and investors operating in the most promising markets for the next generation.
+          </p>
+
+          <p class="desc-normal">
+            We will harness the powerful trends of crowd funding, social networks, impact investing and funds management witin one innovative platform.
+          </p> -->
+
+          <p class="desc-bold" >
+            Discover the frontier markets as you have never seen them before!
+          </p>
+          <div class="subcribe-form text-center">
+            <%= form_tag mailchimp_registration_path , :remote => true do %>
+              <input type="email" value="" name="email" class="email-box" id="mce-EMAIL" placeholder="Enter your email" required="">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <!-- <input type="text" name="b_44054c69907b16711e22d1248_19197e62ac" tabindex="-1" value="" hidden="true"> -->
+              <br>
+              <input class="subcribe-btn"  type="submit" value="Subcribe">
+            <% end %>
+          </div>
+
+          <p class="desc-normal notice">
+            By subcribing to Emerging Frontiers email list you will get free insights and stories about the world's fastest growing economies. Your data is safe with us and signing up to our list puts you under no obligations whatsoever. You can unsubcribe from our list at any time
+          </p>
+
+         <!--  <div id="mf_placeholder"></div> -->
+        </div>
+      </div>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+   <%= render :partial => "/layouts/shared/head.html.erb" %>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <%= render :partial => "/layouts/shared/blog_slider.html.erb" %>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--container fluid-->
+      <div class="container-fluid white">
+
+         <!--container-->
+         <div class="container">
+         <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end %>
+            <!--blog cell-->
+            <% @blogs.each do |blog| %>
+               <div class="blogcell">
+                  <div class="col-lg-1 col-md-1 col-sm-2">
+                     <div class="date">
+                        <span> <%= blog.created_at.strftime("%d") %></span>
+                        <%= blog.created_at.strftime("%b %Y") %>
+                     </div>
+                  </div>
+                  <div class="col-lg-11 col-md-11 col-sm-10 ">
+                     <div class="links">
+                        <!--<h3 class="comments">Posted by<a href="pages.html">&nbsp;OurCrowd</a></h3>-->
+                        <h3 class="tags">Categories: <% if blog.category_id.blank? %>Uncategorized <% else %><%= Category.find_by(:id => blog.category_id).name %><% end %></h3>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                          <%=  image_tag("http://s3-eu-west-1.amazonaws.com/emf-prod/blogs/#{blog.id}/#{blog.banner_image_file_name}") %>
+                     </div>
+                     <div class="col-lg-8 col-md-8 col-sm-8">
+                        <h4>
+                          <%= link_to blog.title , blog_detail_path(blog.id), :style => "color: #555;" %>
+                        </h4>
+                        <p>
+                          <%= truncate(blog.description, :length => 290, :omission => "..." , :escape => false) %>
+                        </p>
+                        <a class="arrow_btn" href="<%= blog_detail_path(blog.id) %>">Read More</a>
+                        
+                     </div>
+
+                     <div class="clearfix"></div>
+                     <div class="clearfix">&nbsp;</div>
+                     <div class="divider"></div>
+                  </div>
+               </div>
+             <% end %>  
+            <!--blog cell-->
+            <!--blog cell-->
+            
+            
+            
+            <!--blog cell-->
+         </div>
+         <!--container-->
+      </div>
+      <!--container fluid-->
+      <!--footer-->
+       <%= render :partial => "/layouts/shared/footer.html.erb" %>
+       <%= render :partial => "/layouts/shared/subscribe.html.erb" %>
+      <!--footer-->
+      <!--back to top-->
+      <script>	
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }	 
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+      <script type = "text/javascript">
+         $(function () {
+             $('#scrollToTop').bind("click", function () {
+                 $('html, body').animate({ scrollTop: 0 }, 800);
+                 return false;
+             });
+            $(".subscripe-email").bind("click",function(){
+              landing_modal.show();
+         
+            });
+
+         });
+      </script>
+      <!--back to top-->
+<!--google analytics-->
+  <%= render :partial => "/layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>
+<style type="text/css">
+  .blogcell a:hover {
+    text-decoration: underline;
+    color: #ac0a0a !important;
+  }
+</style>  

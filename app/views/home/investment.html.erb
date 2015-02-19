@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+   <%= render :partial => "/layouts/shared/head.html.erb" %>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+         <!-- Slideshow 4 -->
+         <%= render :partial => "/layouts/shared/investment_slider.html.erb" %>
+         <div class="clearfix"></div>
+         <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--navbar2-->
+      <div class="navbar2">
+         <!--container-->
+         <div class="container">
+            <ul>
+               <li><a class="active" href="<%= investment_path %>#sec1">Featured Opportunities</a></li>
+               <li><a href="<%= investment_path %>#sec2">Selection Criteria</a></li>
+            </ul>
+         </div>
+         <!--container-->
+      </div>
+      <!--navbar2-->
+      <!--featured-->
+      <div id="sec1" class="featured sec1-con">
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end %>
+         <!--container-->
+         <div class="container">
+            <div class="title">
+               <h1>Featured Investment Opportunities</h1>
+            </div>
+            <div class="clearfix"></div>
+            <%= render :partial => "/layouts/shared/investment_opportunities.html.erb" %>
+         </div>
+         <!--container-->
+      </div>
+        <!--featured-->
+            <div class="clearfix"></div>
+        <!--crite-->    
+       <%= @selection_criteria.description.html_safe %>
+      <!--crite-->
+
+      <!--footer-->
+     <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer-->
+      <!-- subcribe popup -->
+      <%= render :partial => "/layouts/shared/subscribe.html.erb" %>
+      <!-- /subcribe popup -->
+            <!--back to top-->
+      <script>	
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }	 
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+      		<script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+            });
+        </script>
+      <!--back to top-->
+            <script>
+         $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+         	$('html,body').animate({
+         	  scrollTop: target.offset().top
+         	}, 1000);
+         	return false;
+           }
+         }
+          });
+
+          //modal
+          $(".subscripe-email").bind("click",function(){
+            landing_modal.show();
+            
+          });
+
+         });
+      </script>
+   <!--google analytics-->
+    <%= render :partial => "/layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>

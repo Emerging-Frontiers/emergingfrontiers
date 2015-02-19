@@ -1,0 +1,47 @@
+  <div class="navbar">
+            <div class="container">
+               <div class="logo"><a href="<%= root_url %>"><img src="/assets/EMF_Logo_Transparent-1.jpg" /></a></div>
+               <nav class="clearfix">
+                  <a href="#" id="pull">Menu</a>
+                  <ul class="clearfix">
+                     <li class="<%= active_tab_class(root_url) %>"><a href="<%= root_url %>">Home</a></li>
+                     <li class="<%= active_tab_class(investment_path) %>"><a href="<%= investment_path %>">Investments</a>
+                         <ul>
+                             <li><a href="<%= investment_path %>">Featured Opportunities</a></li>
+                             <li><a href="<%= investment_path %>#sec2">Selection Criteria</a></li>
+                         </ul>
+                     </li>
+                     <li class="<%= active_tab_class(about_path) %>"><a href="<%= about_path %>">About Us</a>
+                         <ul>
+                             <li><a href="<%= about_path %>#sec1">Overview</a></li>
+                             <li><a href="<%= about_path %>#sec2">Team</a></li>
+                             <li><a href="<%= about_path %>#sec4">Contact Us</a></li>
+                         </ul>
+                     </li>
+                     <li class="<%= active_tab_class(approach_path) %>"><a href="<%= approach_path %>">Our Approach</a>
+                         <ul>
+                             <li><a href="<%= approach_path %>#sec1">How Does It Work?</a></li>
+                             <li><a href="<%= approach_path %>#sec2">What Sets Us Apart?</a></li>
+                             <li><a href="<%= approach_path %>#sec4">FAQs for Investors</a></li>
+                             <li><a href="<%= approach_path %>#sec5">FAQs for Companies</a></li>
+                             <li><a href="<%= approach_path %>#sec6">FAQs for Syndicates</a></li>
+                         </ul>                     
+                     </li>
+                     <li class="<%= active_tab_class(legal_path) %>"><a href="<%= legal_path %>">Legal</a>
+                         <ul>
+                             <li><a href="<%= legal_path %>#sec1">Privacy Policy</a></li>
+                             <li><a href="<%= legal_path %>#sec2">Terms of Service</a></li>
+                             <li><a href="<%= legal_path %>#sec3">Disclaimer</a></li>
+                   </ul>                     
+                     </li>
+                     <li class="<%= active_tab_class(blogs_path) %>"><a href="#">Emerging Frontiers</a>
+                        <ul>
+                            <li><a href="http://www.emergingfrontiers.com/home" target="new">Return to Main Site</a></li>
+                            <li><a href="<%= blogs_path %>" >EMF Blog</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="clearfix"></div>
+         </div>

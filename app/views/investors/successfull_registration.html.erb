@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+   <%= render :partial => "/layouts/shared/head.html.erb" %>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <%= render :partial => "/layouts/shared/home_slider.html.erb" %>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--sec1-con-->
+      
+      <!--sec5-con-->
+     <div class="section2 crite contact">
+      <div style="margin-top:10px;">
+        
+        </div> 
+         <!--container-->
+         <div class="container">
+            <div class="title">
+               <h1>Congratulations</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12">
+               <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+            </div>
+           
+            <div class="content-wrapper">
+              <div style="widows: 5px;height: 5px;" class="textss"></div>
+              <div class="post-552 page type-page status-publish hentry home-content block entry-block">
+                <h3>Registration Complete</h3><hr />
+                <h4> Congratulations! You are now registered with Emerging Frontiers</h4><hr />
+                <a href="<%= root_url %>" style="text-decoration: none; margin-left:450px;" class="subbtn submit-btn">Return to Investor Platform</a>
+                    
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          
+            <div class="clearfix"></div>
+            <div class="mbtm"></div>
+         </div>
+         <!--container-->
+      </div>
+      <!--sec5-con-->
+      <div class="clearfix"></div>
+
+      
+      
+
+      <!--footer-->
+      <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer-->
+            <!--back to top-->
+      <script>  
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }   
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+          <script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+               
+                //Sign up button
+                // $("#join-evo-submit-btn").bind("click",function(){
+                //   landing_modal.show();
+                //   // window.open()
+                // })
+            });
+        </script>
+      <!--back to top-->
+      <!-- custome javascript -->
+      <script type="text/javascript">
+        homepage.init();
+      </script>
+     
+      <style>
+        .textss{content: "\f096";}
+        .new_congo {
+          background: none repeat scroll 0 0 white;
+          text-align: center;
+        }
+        .new_congo_ul > li {
+          background: none repeat scroll 0 0 white;
+          display: inline;
+        }
+      </style>  
+
+<!--google analytics-->
+ <%= render :partial => "layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>
+
+
+
+
+  

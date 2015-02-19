@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+   <%= render :partial => "/layouts/shared/head.html.erb" %>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+         <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <%= render :partial => "/layouts/shared/home_slider.html.erb" %>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--sec1-con-->
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+      <div class="sec1-con">
+         <!--container-->
+         <div class="container">
+            <h1>Featured Investment Opportunities</h1>
+            <div class="clearfix"></div>
+            <%= render :partial => "/layouts/shared/investment_opportunities.html.erb" %>
+            <div class="clearfix"></div>
+            <% if investor_signed_in? %>
+              <p>Featured Investment opportunities. <a href="<%= investment_path %>" >Learn More</a></p>
+            <% else %>
+              <p>Featured Investment opportunities. <a href="<%= new_investor_registration_path %>" >Learn More</a></p>
+            <% end %>
+            
+         </div>
+         <!--container-->
+      </div>
+      <!--sec1-con-->
+      <div class="clearfix"></div>
+      <!--sec3-con-->
+     <%= @home.description.html_safe %>
+      <!--sec4-con-->
+      <div class="clearfix"></div>
+      <!--sec5-con-->
+      <div class="sec5-con" id="sec5-con">
+        <div style="margin-top:10px;">
+          <% flash.each do |name, msg| %>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <% end %>
+        </div>  
+         <!--container-->
+         <div class="container">
+            <h1>Join The Revolution</h1>
+            <h2>Sign Up to stay informed of new opportunities</h2>
+            <%= form_tag send_to_mailchimp_path, :id =>"join-evo-submit-form" do %>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <%= text_field_tag :first_name ,nil,:class=>"textfield" ,:placeholder=>"First Name", :required => true %>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <%= text_field_tag :last_name ,nil,:class=>"textfield" ,:placeholder=>"Last Name", :required => true %>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <%= text_field_tag :email ,nil,:class=>"textfield" ,:placeholder=>"Email", :required => true, :email=> true %>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12">
+                <%= text_area_tag :comment,nil ,:class=>"textarea" ,:placeholder=>"Comments" %>
+              </div>
+              <div class="col-lg-12">
+                <div class="btnarea">
+                  <p><a href="<%= legal_path %>#sec1">See our Privacy Policy here.</a></p>
+                </div>
+                <div class="btnarea">
+                  <%= submit_tag "Sign Up",:class=>"subbtn" ,:id=>"join-evo-submit-btn" %>
+                </div>
+              </div>
+            <% end %>
+         </div>
+         <!--container-->
+      </div>
+      <!--sec5-con-->
+      <div class="clearfix"></div>
+
+      <!-- subcribe popup -->
+      <%= render :partial => "/layouts/shared/subscribe.html.erb" %>
+      <!-- /subcribe popup -->
+
+      <!--footer-->
+      <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer-->
+            <!--back to top-->
+      <script>  
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }   
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+          <script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+                $(document).ready(function () {
+                  $('#join-evo-submit-form').validate({ // initialize the plugin
+                    rules: {
+                        first_name: {
+                            required: true
+                            
+                        }
+                    }
+                  });
+                });
+                //Sign up button
+                // $("#join-evo-submit-btn").bind("click",function(){
+                //   landing_modal.show();
+                //   // window.open()
+                // })
+            });
+        </script>
+      <!--back to top-->
+      <!-- custome javascript -->
+      <script type="text/javascript">
+        homepage.init();
+      </script>
+<!--google analytics-->
+  <%= render :partial => "/layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>

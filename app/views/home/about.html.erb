@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="google-site-verification" content="p2n_1DEm52gdQsVtOtUSZ-meVXWjOyZlnsKv3cLEBiM" />
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="/assets/favicon.ico">
+      <link rel="icon" href="/assets/favicon.ico">
+      <title>Emerging Frontiers</title>
+      
+      <link rel="stylesheet" type="text/css" href="/assets/style.css">
+      <link rel="stylesheet" type="text/css" href="/assets/custom.css">
+      <!--jQuery-->
+      <script src="/assets/jquery.min.js"></script>
+      <script src="/assets/custom.js"></script>
+      <!--jQuery-->
+
+      <!--font attched-->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+      <script type="text/javascript">
+         WebFontConfig = {
+         google: { families: [ 'Open+Sans:400,600,300:latin' ] }
+         };
+         (function() {
+         var wf = document.createElement('script');
+         wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+         '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+         wf.type = 'text/javascript';
+         wf.async = 'true';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wf, s);
+              })();
+              
+      </script>
+      <!--font attched-->
+      <!--boostrap-->
+      <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css">
+      <script src="/assets/bootstrap.min.js"></script>
+      <!--boostrap-->
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script>
+         $(function() {
+          var pull    = $('#pull');
+            menu    = $('nav ul');
+            menuHeight  = menu.height();
+         
+          $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+          });
+         
+          $(window).resize(function(){
+                  var w = $(window).width();
+                  if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                  }
+              });
+         });
+      </script>
+      <!----start-slider-script---->
+      <link rel="stylesheet" type="text/css" href="/assets/rslide.css">
+      <script src="/assets/responsiveslides.min.js"></script>
+      <script>
+         // You can also use "$(window).load(function() {"
+         $(function () {
+           // Slideshow 4
+           $("#slider4").responsiveSlides({
+             auto: true,
+             pager: true,
+             nav: true,
+             speed: 500,
+             namespace: "callbacks",
+             before: function () {
+               $('.events').append("<li>before event fired.</li>");
+             },
+             after: function () {
+               $('.events').append("<li>after event fired.</li>");
+             }
+           });
+         
+         });
+      </script>
+      <!----//End-slider-script---->
+
+      
+            <!--back to top-->
+      <script>  
+         $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+         if (scroll >= 600) {
+             $("#demoTop").addClass("view", 2000);
+         }   
+         var scroll = $(window).scrollTop();
+         if (scroll <= 600) {
+             $("#demoTop").removeClass("view", 2000);
+         }
+         
+         });     
+      </script> 
+          <script type = "text/javascript">
+            $(function () {
+                $('#scrollToTop').bind("click", function () {
+                    $('html, body').animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+            });
+        </script>
+      <!--back to top-->
+
+      
+   </head>
+   <body>
+   <span id="demoTop" title="Going Up?" data-placement="top" data-toggle="tooltip"><a id="scrollToTop" style="display: block;padding:5px;" href="javascript:;">Top</a></span>
+      <!--header-->
+      <div class="header">
+         <!--topbar-->
+         <%= render :partial => "/layouts/shared/top_bar.html.erb" %>
+         <!--topbar--> 
+         <!--navbar-->
+        <%= render :partial => "/layouts/shared/header.html.erb" %>
+         <!--navbar--> 
+      </div>
+      <!--header-->
+      <div class="clearfix"></div>
+      <div class="row">
+      <!-- Slideshow 4 -->
+      <div id="top" class="callbacks_container">
+      <ul class="rslides" id="slider4">
+         <li>
+            <img src="/assets/about1.jpg" alt="">
+            <div class="caption">
+            <div class="slide-text-info">
+              <h1></h1>
+               <p>Learn About The Future of Private Equity Investing</p>
+               <div class="clearfix"></div>
+                <div class="newslet">
+                <form>
+                <!-- <input class="textfield" type="text" placeholder="Enter your Email"> -->
+                <input class="subbtn fix-subscribe-btn subscripe-email" type="button" value="Subscribe To Our Newsletter">
+                </form>
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+         </li>
+         <li>
+            <img src="/assets/about2.jpg" alt="">
+            <div class="caption">
+               <div class="slide-text-info">
+                   <h1></h1>
+                  <p>Learn About The Future of Private Equity Investing</p>
+               <div class="clearfix"></div>
+                <div class="newslet">
+                <form>
+                <!-- <input class="textfield" type="text" placeholder="Enter your Email"> -->
+                <input class="subbtn fix-subscribe-btn subscripe-email" type="button" value="Subscribe To Our Newsletter">
+                </form>
+                </div>
+               </div>
+               <div class="clearfix">
+               </div>
+         </li>
+         <li>
+         <img src="/assets/about3.jpg" alt="">
+         <div class="caption">
+         <div class="slide-text-info">
+                 <h1></h1>
+                 <p>Learn About The Future of Private Equity Investing</p>
+               <div class="clearfix"></div>
+                <div class="newslet">
+                <form>
+                <!-- <input class="textfield" type="text" placeholder="Enter your Email"> -->
+                <input class="subbtn fix-subscribe-btn subscripe-email" type="button" value="Subscribe To Our Newsletter">
+                </form>
+                </div>
+         </div>
+         <div class="clearfix">
+         </div>
+         </li>
+      </ul>
+      </div>
+      <div class="clearfix"></div>
+      <!----- //End-slider---->
+      </div>
+      <div class="clearfix"></div>
+      <!--navbar2-->
+      <div class="navbar2">
+         <!--container-->
+         <div class="container">
+            <ul>
+               <li><a class="active" href="#sec1">Overview</a></li>
+               <li><a href="#sec2">Team</a></li>
+               <li><a href="#sec4">Contact Us</a></li>
+            </ul>
+         </div>
+         <!--container-->
+      </div>
+      <!--navbar2-->
+      <div class="clearfix"></div>
+      <!--section1-->
+      <div class="section1 crite over" id="sec1"><!--container-->
+<div class="container">
+<div class="title">
+<h1>Overview</h1>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 over">
+<div class="img-sec"><img src="/assets/a1.jpg" /></div>
+
+<h4>We Have Global Reach...</h4>
+
+<p>The sun never sets on Emerging Frontiers. Our management team lives on three continents, and our advisory team hails from various frontier markets around the world. As founders of numerous businesses, we understand the challenges of entrepreneurship and the frustrations of raising capital.</p>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 over">
+<div class="img-sec"><img src="/assets/a2.jpg" /></div>
+
+<h4>We Want to &#39;Fix&#39; Finance...</h4>
+
+<p>We are veterans of the financial services industry, and still cling to the old-fashioned belief that small businesses should be able to access credit and find investors as easily as large corporations do. Our goal is to help entrepreneurs around the world in regaining control of the investment process.</p>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 over">
+<div class="img-sec"><img src="/assets/a3.jpg" /></div>
+
+<h4>And We Need Your Help!</h4>
+
+<p>We have decades of collective expertise in the frontier markets, and are passionate in our belief that these are the most exciting and dynamic countries in the world. We want to find investors and entrepreneurs who share these beliefs, and create a community around them. Join us.</p>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+
+<div class="col-lg-12">
+<p>At Emerging Frontiers we are gaining new users and followers every day, and many of our new friends and clients often make comments about a business model that many of them see as revolutionary. But in our opinion, we&#39;re just doing things the old-fashioned way - with the help of 21st century innovations, of course. The fact is, that investors today are so accustomed to dealing with the monolithic bureaucracies of today&#39;s financial services industry, and the homogeneous nature of so-called &#39;investment products&#39; on offer, that many of us have forgotten just how personal and emotional the investment process used to be.</p>
+
+<p>We started Emerging Frontiers for many reasons, but they all come down to this one key point -- entrepreneurship is a powerful force for positive change, and it needs our support. We are inspired by the achievements of entrepreneurs in the developed world, who create companies or even entire industries, and enrich our collective lives as a result. We have worked in the world&#39;s frontier and emerging markets for many years, and believe that the business owners we meet in these regions deserve to have a level playing field. We hope that, through your participation in our online investor marketplace, that you will help us to extend that helping hand. In return we hope that we can help you to discover the financial and emotional rewards of investing directly in people, projects and companies that you believe in.</p>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+</div>
+<!--container--></div>
+<!--section1--><!--section2-->
+
+<div class="section2 team crite" id="sec2"><!--container-->
+<div class="container">
+<div class="title">
+<h1>Team</h1>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+
+<h4>Emerging Frontiers Was Founded By A Team Of Investment Professionals And Frontier Markets Veterans</h4>
+
+<div class="clearfix">&nbsp;</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 timg">
+<div class="img-sec1"><img src="/assets/kv.png" /></div>
+
+<h4><span>Kevin Virgil</span></h4>
+
+<p style="width:90%; margin:0 auto;">Kevin has been a frontier markets explorer and investor for over fifteen years. His previous experience includes work as a military officer, diplomat, and corporate finance roles with UBS and Merrill Lynch. In addition to his work at Emerging Frontiers he is the founder of Pathfinder Capital, an investment manager specializing in both listed and private placement opportunities in frontier markets.</p>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 timg ">
+<div class="img-sec1"><img src="/assets/mm.png" /></div>
+
+<h4><span>Mark Moline</span></h4>
+
+<p style="width:90%; margin:0 auto;">Mark is the co-founder of Seraph, a virtual angel investing syndicate that has grown to nearly US$ 20 million of participation in less than two years. A long-time frontier markets explorer and resident, Mark has a strong network of contacts in ASEAN and Latin America</p>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 timg">
+<div class="img-sec1"><img src="/assets//bb.png" /></div>
+
+<h4><span>Baldwin Berges </span></h4>
+
+<p style="width:90%; margin:0 auto;">Baldwin has been active in the investment industry for more than 20 years with a specific focus on emerging and frontier markets. After starting his career as a bond trader, he worked at Invesco, Standard Bank and helped launch Silk Invest, a frontier markets focused investment boutique of which he is a partner. He also became an early adapter of content-driven inbound marketing within the investment management industry and helps businesses position themselves online in order to attract investors.</p>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 timg">
+<div class="img-sec1"><img src="/assets/dw.png" /></div>
+
+<h4><span>Daniel Workman </span></h4>
+
+<p style="width:90%; margin:0 auto;">Daniel has previously worked with a strategic communications firm where he provided counsel to companies and governments in MENA and Latin America. His prior experience includes work with a sovereign wealth fund to develop communications capabilities as well as with the government of the United Arab Emirates, whom he helped formulate communications priorities on defense and trade issues. Daniel has degrees from University College London and The George Washington University.</p>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+</div>
+<!--container--></div>
+<!--section2--><!--section3-->
+
+<div class="section2 crite" id="sec3"><!--container-->
+<div class="container">
+<h4>See Us On Emerging Frontiers TV</h4>
+
+<div class="clearfix">&nbsp;</div>
+
+<div class="videoslider">
+<div class="flexslider">
+<ul class="slides">
+  <li>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/XoO77nlVtQ4" width="100%"></iframe></div>
+
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/ZOrOMzCjnpo" width="100%"></iframe></div>
+  </li>
+  <li>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/BjD-RIHLf8M" width="100%"></iframe></div>
+
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/zR8ifrfNepo" width="100%"></iframe></div>
+  </li>
+  <li>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/4CaZYiPlzW4" width="100%"></iframe></div>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="//www.youtube.com/embed/ccMgdVt_jHs" width="100%"></iframe></div>
+  
+  </li>
+  <li>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/j2z946h_HQo" width="100%"></iframe></div>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/1wlDhNWkETs" width="100%"></iframe></div>
+  
+  </li>
+  <li>
+  <div class="col-md-6"><iframe allowfullscreen="" frameborder="0" height="415" src="https://www.youtube.com/embed/a35EXKpa6i8" width="100%"></iframe></div>
+ 
+  </li>
+</ul>
+</div>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+
+<h4>Listen to the Emerging Frontiers Podcast</h4>
+
+<div class="clearfix">&nbsp;</div>
+
+ <div class="videoslider">
+<div class="flexslider">
+<ul class="slides">
+  <li>
+    <div class="col-md-4">
+      <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3108831/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+      <div class="clearfix">&nbsp;</div>
+      <p style="text-align: center;">Dubai, Anything is Possible!</p>
+    </div>
+
+    <div class="col-md-4">
+      <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3114605/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+      <div class="clearfix">&nbsp;</div>
+      <p style="text-align: center;">Amazing Mongolia</p>
+    </div>
+    <div class="col-md-4">
+      <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3125326/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+      <div class="clearfix">&nbsp;</div>
+      <p style="text-align: center;">Myanmar Rising</p>
+    </div>
+  </li>
+  <li>
+    <div class="col-md-4">
+     <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3185283/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+      <div class="clearfix">&nbsp;</div>
+      <p style="text-align: center;">African Tech and Bitcoins Aginst Ebola</p>
+    </div>
+
+    <div class="col-md-4">
+      <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3193339/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" webkitallowfullscreen="" width="100%"></iframe>
+     
+      <div class="clearfix">&nbsp;</div>
+      <p>How South African Entrepreneurs Are Saving Lives</p>
+    </div>
+    <div class="col-md-4">
+      <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3230314/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+      <div class="clearfix">&nbsp;</div>
+      <p style="text-align: center;">Coming into its own: Nepal</p>
+    </div>
+  </li>
+  <li>
+    <div class="col-md-4">
+    <iframe allowfullscreen="" height="245" mozallowfullscreen="" msallowfullscreen="" oallowfullscreen="" scrolling="no" src="//html5-player.libsyn.com/embed/episode/id/3252442/height/245/width/280/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" style="border: none; overflow-y:hidden;" webkitallowfullscreen="" width="100%"></iframe>
+    <div class="clearfix">&nbsp;</div>
+    <p style="text-align: center;">Rebounding Iraq</p>
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+<!--container--></div>
+
+     
+      <!--section3-->
+      <div class="clearfix"></div>
+      <!--section4-->
+      <div class="section2 crite contact" id="sec4">
+      <div style="margin-top:10px;">
+          <%# flash.each do |name, msg| %>
+            <%#= content_tag :div, msg, :id => "flash_#{name}" %>
+          <%# end %>
+        </div> 
+         <!--container-->
+         <div class="container">
+            <div class="title">
+               <h1>Contact Us</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12">
+               <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+               <%= form_tag contact_us_path do %>
+                  <div class="cell">        
+                     <input type="text" placeholder="Full Name" class="textfield" name="full_name">
+                  </div>
+                  <div class="cell">
+                     <input type="text" placeholder="Subject" class="textfield" name="subject">
+                  </div>
+                  <div class="cell">
+                     <input type="text" placeholder="Email" class="textfield" name="email">
+                  </div>
+                  <div class="cell">
+                     <textarea class="textarea" placeholder="Messege" name="message"></textarea>
+                  </div>
+                  <div class="clearfix"></div>
+                  <input type="submit" value="Submit" class="subbtn submit-btn">
+               <% end %>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+               <!--<div class="maparea">
+                  <div id="map-canvas"></div>
+               </div>-->
+               <div class="clearfix"></div>
+               <address>
+                  <h4>Emerging Frontiers Pte Ltd</h4>
+                  <p>38 North Canal Road<br/>Singapore 059294<br/>
+                  </p>
+                  <a href="mailto:info@emergingfrontiers.com">info@emergingfrontiers.com</a>
+               </address>
+            </div>
+            <div class="clearfix"></div>
+            <div class="mbtm"></div>
+         </div>
+         <!--container-->
+      </div>
+      <!--section4-->
+           <!-- subcribe popup -->
+      <%= render :partial => "/layouts/shared/subscribe.html.erb" %>
+      <!-- /subcribe popup -->
+      <!--footer-->
+      <%= render :partial => "/layouts/shared/footer.html.erb" %>
+      <!--footer-->
+      <script>
+         $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+           }
+         }
+          });
+         });
+      </script>
+      <!-- FlexSlider -->
+      <link rel="stylesheet" type="text/css" href="/assets/flexslider.css">
+      <script defer src="/assets/jquery.flexslider.js"></script>
+      <script type="text/javascript">
+         $(function(){
+          //modal
+          $(".subscripe-email").bind("click",function(){
+            landing_modal.show();
+            
+          });
+          $(".submit-btn").bind("click",function(){
+            landing_modal.show();
+          })
+           // SyntaxHighlighter.all();
+         
+         });
+         
+         $(window).load(function(){
+         
+           $('.flexslider').flexslider({
+         
+             animation: "slide",
+         
+             start: function(slider){
+         
+               $('body').removeClass('loading');
+         
+             }
+         
+           });
+         
+         });
+      </script>
+      <!-- FlexSlider -->
+<!--google analytics-->
+ <%= render :partial => "/layouts/shared/google_analytics" %>
+<!--google analytics-->
+   </body>
+</html>
