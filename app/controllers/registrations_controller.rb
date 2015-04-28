@@ -40,4 +40,6 @@ class RegistrationsController < Devise::RegistrationsController
       respond_with resource
     end
   end
+
+  
 end 
