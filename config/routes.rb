@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   post "investors/delete" => "investors#destroy"
   post "investors/update_investor" => "investors#update_investor"
   post "investors/edit_investor" => "investors#edit_investor"
+  get "/tokbox" => "home#tokbox"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
